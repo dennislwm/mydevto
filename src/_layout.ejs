@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title><%- pageTitle %> | <%- siteTitle %></title>
+
+    <!-- Bootstrap CSS first, then Mytheme CSS -->
+    <!-- Bootswatch theme at https://www.bootstrapcdn.com/bootswatch/ -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mytheme.css" />
+  </head>
+  <body>
+    <%- partial("_header") %> <%- yield %> <%- partial("_footer") %>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/article.js"></script>
+    <script>
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+            func();
+          };
+        }
+      }
+      addLoadEvent(htmlGetIndex);
+      addLoadEvent(htmlGetPage2);
+    </script>
+  </body>
+</html>

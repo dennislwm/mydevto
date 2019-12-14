@@ -1,0 +1,9 @@
+{
+  "_comment": "global settings and variables that will be used across the entire blog",
+  "globals": {
+    "pageTitle": "",
+    "siteTitle": "Dennis Lee's Dev.to Custom Feed",
+    "description": "Personal custom feed of articles from Dev.to.",
+    "url": "http://tldr.pro/mydevto"
+  }
+}

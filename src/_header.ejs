@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html"
+    ><h2>Dennis Lee's Dev.to Custom Feed</h2></a
+  >
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <div class="navbar-nav float-left text-left pr-3">
+      <a
+        class="nav-item nav-link <%- current.source == 'index' ? 'active' : '' %>"
+        href="index.html"
+        >Home <span class="sr-only">(current)</span></a
+      >
+      <a
+        class="nav-item nav-link <%- current.source == 'page2' ? 'active' : '' %>"
+        href="page2.html"
+        >Page2</a
+      >
+      <a
+        class="nav-item nav-link"
+        href="https://dev.to/dennislwm"
+        target="_blank"
+        ><img
+          src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+          alt="dennislwm's DEV Profile"
+          height="30"
+          width="30"
+      /></a>
+    </div>
+  </div>
+</nav>

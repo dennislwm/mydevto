@@ -1,0 +1,12 @@
+<!-- 
+I'm using the .container class to wrap the entire footer, which will set a max width of 1140 px for the layout. The navbar wasn't placed into a container so it will stretch to the full width of the page. The .container class will also set a left and right padding of .9375rem to the block. It's important to note that Bootstrap 4 uses REMs for the main unit of measure. EMs has been deprecated with the upgrade from version 3. If you're interested in learning more about REMs, you should read this blog post: http://snook.ca/archives/html_and_css/font-size-with-rem .
+It's also important to note that the column classes have NOT changed from Bootstrap 3 to 4. This is actually a good thing if you are porting over a project, as it will make the migration process much easier. I've set the width of the footer to be the full width of the container by using the .col-lg-12 class.
+-->
+<!-- footer //-->
+<div class="container footer">
+  <div class="row">
+    <div class="col-lg-12">
+      &copy; Copyright 2019 Dennis Lee
+    </div>
+  </div>
+</div>
